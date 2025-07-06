@@ -1,7 +1,7 @@
 function submit(userName, password) {
 	var result = "";
 	$.ajax({
-		url: "http://localhost:8080/logincontroller/submit",
+		url: window.location.origin + "/logincontroller/submit",
 		data: {
 			"userName": userName,
 			"password": password
